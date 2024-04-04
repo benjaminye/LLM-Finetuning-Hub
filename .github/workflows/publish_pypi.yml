@@ -27,7 +27,9 @@ jobs:
           virtualenvs-in-project: true
           installer-parallel: true
       - name: Install PyPI Credential
-        run: poetry config pypi-token.pypi ${{ secrets.PYPI_API_TOKEN }}
+        run: |
+        poetry config repositories.test-pypi https://test.pypi.org/legacy/
+        poetry config pypi-token.test-pypi ${{ secrets.PYPI_API_TOKEN }}
       # ----------------
       # Install Deps
       # ----------------
