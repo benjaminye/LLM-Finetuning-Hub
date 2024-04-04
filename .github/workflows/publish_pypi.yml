@@ -26,8 +26,8 @@ jobs:
           installer-parallel: true
       - name: Install PyPI Credential
         run: |
-        poetry config repositories.test-pypi https://test.pypi.org/legacy/
-        poetry config pypi-token.test-pypi ${{ secrets.PYPI_API_TOKEN }}
+          poetry config repositories.test-pypi https://test.pypi.org/legacy/
+          poetry config pypi-token.test-pypi ${{ secrets.PYPI_API_TOKEN }}
       # ----------------
       # Install Deps
       # ----------------
