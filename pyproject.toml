@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "llm-toolkit"
+name = "llm-toolkit-test"
 version = "0.0.0"
 description = "LLM Finetuning resource hub + toolkit"
 authors = ["Benjamin Ye <benjamin.ye@georgian.io>"]
